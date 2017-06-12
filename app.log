@@ -1,0 +1,84 @@
+2017-06-12T12:31:09.814Z - error: uncaughtException: Schema hasn't been registered for model "Loginuser".
+Use mongoose.model(name, schema) date=Mon Jun 12 2017 20:31:09 GMT+0800 (China Standard Time), pid=35432, uid=null, gid=null, cwd=D:\development\game_landlord\LANDLORD_DOM, execPath=C:\Program Files\nodejs\node.exe, version=v6.2.0, argv=[C:\Program Files\nodejs\node.exe, D:\development\game_landlord\LANDLORD_DOM\server], rss=53252096, heapTotal=43126784, heapUsed=28156952, loadavg=[0, 0, 0], uptime=185495.2960759
+MissingSchemaError: Schema hasn't been registered for model "Loginuser".
+Use mongoose.model(name, schema)
+    at Mongoose.model (D:\development\game_landlord\LANDLORD_DOM\node_modules\mongoose\lib\index.js:379:13)
+    at Object.module.exports.initLoginUser (D:\development\game_landlord\LANDLORD_DOM\config\lib\mongoose.js:51:23)
+    at Object.<anonymous> (D:\development\game_landlord\LANDLORD_DOM\config\lib\app.js:14:10)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Module.require (module.js:468:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\development\game_landlord\LANDLORD_DOM\server.js:6:11)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Function.Module.runMain (module.js:575:10)
+    at startup (node.js:160:18)
+    at node.js:449:3
+2017-06-12T12:32:23.063Z - error: uncaughtException: mongoose.initLoginUser is not a function date=Mon Jun 12 2017 20:32:23 GMT+0800 (China Standard Time), pid=34260, uid=null, gid=null, cwd=D:\development\game_landlord\LANDLORD_DOM, execPath=C:\Program Files\nodejs\node.exe, version=v6.2.0, argv=[C:\Program Files\nodejs\node.exe, D:\development\game_landlord\LANDLORD_DOM\server], rss=53374976, heapTotal=43126784, heapUsed=28196496, loadavg=[0, 0, 0], uptime=185568.5479588
+TypeError: mongoose.initLoginUser is not a function
+    at Object.<anonymous> (D:\development\game_landlord\LANDLORD_DOM\config\lib\app.js:14:10)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Module.require (module.js:468:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\development\game_landlord\LANDLORD_DOM\server.js:6:11)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)
+    at Function.Module._load (module.js:409:3)
+    at Function.Module.runMain (module.js:575:10)
+    at startup (node.js:160:18)
+    at node.js:449:3
+2017-06-12T12:33:22.724Z - info: [0mPOST /Init [33m404 [0m68.191 ms - 144[0m
+
+2017-06-12T12:36:57.164Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T12:38:08.093Z - info: [0mPOST /Init [36m302 [0m212.905 ms - 35[0m
+
+2017-06-12T12:38:08.145Z - info: [0mGET /server-error [31m500 [0m40.620 ms - 69[0m
+
+2017-06-12T12:38:58.108Z - info: [0mPOST /Init [36m302 [0m139.432 ms - 35[0m
+
+2017-06-12T12:38:58.152Z - info: [0mGET /server-error [31m500 [0m36.206 ms - 69[0m
+
+2017-06-12T12:40:43.125Z - info: [0mPOST /Init [36m302 [0m156.596 ms - 35[0m
+
+2017-06-12T12:40:43.179Z - info: [0mGET /server-error [31m500 [0m41.474 ms - 69[0m
+
+2017-06-12T12:48:47.814Z - info: [0mPOST /Init [33m404 [0m41.165 ms - 144[0m
+
+2017-06-12T12:51:34.465Z - info: [0mPOST /Init [36m302 [0m165.960 ms - 35[0m
+
+2017-06-12T12:51:34.520Z - info: [0mGET /server-error [31m500 [0m40.676 ms - 69[0m
+
+2017-06-12T12:55:05.568Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T13:02:21.128Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T13:10:57.762Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T13:13:47.660Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T13:20:52.974Z - info: [0mPOST /Init [36m302 [0m156.765 ms - 35[0m
+
+2017-06-12T13:20:53.022Z - info: [0mGET /server-error [31m500 [0m38.504 ms - 69[0m
+
+2017-06-12T13:48:08.142Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T13:54:13.654Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T14:03:28.463Z - info: [0mPOST /Init [0m- [0m- ms - -[0m
+
+2017-06-12T14:08:02.782Z - info: [0mPOST /Init [32m200 [0m41.787 ms - -[0m
+
