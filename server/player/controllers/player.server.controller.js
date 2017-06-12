@@ -9,27 +9,36 @@ var qs = require('querystring');
 var Player = mongoose.model('Player');
 
 exports.onInit = onInit;
+exports.onNewGame = onNewGame;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
+exports.onInit = onInit;
 
-
+var retRes = (ret, res) => {
+    let json_data = JSON.stringify(ret);
+    res.write(json_data);
+    console.log('in retRes', json_data);
+    res.end();
+}
 function onInit(req, res, next) {
-
-    for(var i in req.body){
-        if(i){
-            playerService.onInit(JSON.parse(i).position, function(err, ret){
-                if(err) res.status(400).send(err);
-                else {
-                    if(ret){
-                        var json_data = JSON.stringify(ret);
-                        res.write(json_data);
-                        console.log('cccccccccccccccccccccc');
-                        console.log(json_data);
-                        console.log('cccccccccccccccccccccc');
-                        res.end();
-                    }else{
-                        res.end('');
+    if(!_.isEmpty(req.body)) {
+        for (let i in req.body) {
+            if (i) {
+                playerService.onInit(JSON.parse(i).position, (err, ret) => {
+                    if (err) res.status(400).send(err);
+                    else {
+                        ret? retRes(ret, res) : res.end('');
                     }
-                }
-            });
+                });
+            }
         }
     }
 };

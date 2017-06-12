@@ -5,7 +5,6 @@ var mongoose = require('mongoose');
 var async = require('async');
 var Player = mongoose.model('Player');
 
-
 exports.onInit = onInit;
 
 let player = {
